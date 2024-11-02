@@ -1,5 +1,46 @@
+// .nav-bar {
+//   display: flex;
+//   background-color: #ada9a9;
+//   padding-left: 20px;
+// }
 .nav-bar {
   display: flex;
-  background-color: #ccc;
-  padding-left: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #e5e0d9;
+}
+
+.nav-bar__logo-and-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar__logo {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit;       /* Hereda el color del elemento padre (o define un color específico) */
+  margin-right: 1130px;
+  &:visited{ /* cuando ha sido visitado */
+    color: inherit;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+
+    color: inherit; /* cuando se pasa el mouse encima */
+
+  }
+}
+
+
+.nav-bar__logo-icon { /* Para el punto naranja */
+  color: #ff6700; /* O el color que quieras */
+  margin-right: 5px; 
+}
+
+.nav-bar__logo-icon {
+  color: #ff6700;
+  margin-right: 5px;
 }
