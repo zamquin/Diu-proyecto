@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import HomePage from '../pages/home_page'
-import LightbulbPage from '../pages/lightbulb_page'
 import Supermarket from '../pages/supermarket_page'
 import MenuPage from '../pages/menu_page'
 import WeekPage from '../pages/week_page'
@@ -21,7 +20,6 @@ const Layout = () => {
         <div className='layout__page'>
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/lightbulb' element={<LightbulbPage />} />
             <Route path='/supermarket' element={<Supermarket />} />
             <Route path='/menu' element={<MenuPage />} />
             <Route path='/week' element={<WeekPage />} />
