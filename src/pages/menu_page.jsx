@@ -40,9 +40,9 @@ export const MenuPage = () => {
               {week1.map((week) => (
                   <tr key={week.dia}>
                       <td>{week.dia}</td>
-                      <td>{week.Desayuno}</td>
-                      <td>{week.Almuerzo}</td> 
-                      <td>{week.Cena}</td>
+                      <td>{week.Desayuno} <button>Editar</button></td>
+                      <td>{week.Almuerzo} <button>Editar</button></td> 
+                      <td>{week.Cena} <button>Editar</button></td>
                   </tr>
               ))}
           </tbody>
@@ -63,15 +63,15 @@ export const MenuPage = () => {
               {week2.map((week) => (
                   <tr key={week.dia}>
                       <td>{week.dia}</td>
-                      <td>{week.Desayuno}</td>
-                      <td>{week.Almuerzo}</td> 
-                      <td>{week.Cena}</td>
+                      <td>{week.Desayuno} <button>Editar</button></td>
+                      <td>{week.Almuerzo} <button>Editar</button></td> 
+                      <td>{week.Cena} <button>Editar</button></td>
                   </tr>
               ))}
           </tbody>
       </table>
       
-      <button className= "button-agregar-comida"> <Link className="link-agregar-comida" to="/supermarket">Ver Lista de Compras</Link></button>
+      <button className= "button-agregar-comida"> <Link className="link-agregar-comida" to="/week">Guardar Semana</Link></button>
     </div>
   )
 }
