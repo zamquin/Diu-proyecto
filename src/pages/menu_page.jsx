@@ -27,7 +27,7 @@ export const MenuPage = () => {
       <p>MENU PAGE</p>
 
       <h1> Semana 1 </h1>
-      <table className="menus-table"> {/* Tabla para mostrar las recetas */}
+      <table className="menus-table"> 
           <thead>
               <tr>
                   <th>dia</th>
