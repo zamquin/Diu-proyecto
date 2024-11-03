@@ -1,0 +1,26 @@
+.menus-table {
+    width: 100%;
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.menus-table th,
+.menus-table td {
+    border: 5px solid #ccc; /* Borde de las celdas */
+    padding: 10px; /* Espacio interior de las celdas */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+
+.button-agregar-comida{
+    background-color: #e76f51; /* Cambia el color si prefieres */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    text-decoration: none;
+
+}

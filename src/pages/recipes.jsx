@@ -1,5 +1,4 @@
 import React from 'react';
-import '../stylesheets/recipes.scss';
 import { Link } from 'react-router-dom'
 
 
