@@ -1,0 +1,118 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px); // Resta el alto aproximado del navbar
+  background-color: #fff;
+
+  &__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #e5e0d9;
+
+    &-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    &-description {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    &-button {
+      background-color: #ff6700;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      
+      &:hover {
+        background-color: darken(#ff6700, 10%);
+      }
+    }
+  }
+
+  &__features {
+    padding: 60px 40px;
+
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &-card {
+      text-decoration: none;
+      color: inherit;
+      padding: 20px;
+      border: 1px solid #e5e0d9;
+      border-radius: 8px;
+      text-align: center;
+
+      &:hover {
+        background-color: #e5e0d9;
+      }
+
+      &-icon {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      &-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      &-description {
+        color: #666;
+      }
+    }
+  }
+  &__cta {
+    padding: 60px 40px;
+
+
+    &-container {
+      text-decoration: none;
+      color: inherit;
+      padding: 20px;
+      border: 1px solid #e5e0d9;
+      border-radius: 8px;
+      text-align: center;
+    
+    &:hover {
+      background-color: #e5e0d9;
+    
+    }
+    }
+    &-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    &-description {
+      color: #666;
+    }
+    &-button {
+      background-color: #ff6700;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+  }
+}
