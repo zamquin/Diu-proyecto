@@ -52,6 +52,7 @@ export const MenuPage = () => {
   };
 
   const renderTable = (weekData, weekNum) => (
+    <div className="home__cta-container">
     <table className="menus-table">
       <thead>
         <tr>
@@ -66,7 +67,7 @@ export const MenuPage = () => {
           <tr key={day.dia}>
             <td>{day.dia}</td>
             <td>
-              {day.Desayuno}
+              {/* {day.Desayuno} */}
               <select 
                 className="edit-select"
                 value={day.Desayuno}
@@ -78,7 +79,7 @@ export const MenuPage = () => {
               </select>
             </td>
             <td>
-              {day.Almuerzo}
+              {/* {day.Almuerzo} */}
               <select 
                 className="edit-select"
                 value={day.Almuerzo}
@@ -90,7 +91,7 @@ export const MenuPage = () => {
               </select>
             </td>
             <td>
-              {day.Cena}
+              {/* {day.Cena} */}
               <select 
                 className="edit-select"
                 value={day.Cena}
@@ -105,6 +106,7 @@ export const MenuPage = () => {
         ))}
       </tbody>
     </table>
+    </div>
   );
 
   return (

@@ -41,7 +41,10 @@ export const Recipes = () => {
                             <td>{receta.ingredientes.join(', ')}</td> {/* Une los ingredientes con comas */}
                             <td>{receta.instrucciones}</td>
                             <td>
-                                <Link to={`/edit/${receta.nombre}`} className="button-editar-comida"> 
+                                {/* <Link to={`/edit/${receta.nombre}`} className="button-editar-comida"> 
+                                    Editar
+                                </Link> */}
+                                <Link to={`/add`} className="button-editar-comida"> 
                                     Editar
                                 </Link>
                             </td>
