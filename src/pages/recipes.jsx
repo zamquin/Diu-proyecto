@@ -31,6 +31,7 @@ export const Recipes = () => {
                         <th>Nombre</th>
                         <th>Ingredientes</th>
                         <th>Instrucciones</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,6 +40,11 @@ export const Recipes = () => {
                             <td>{receta.nombre}</td>
                             <td>{receta.ingredientes.join(', ')}</td> {/* Une los ingredientes con comas */}
                             <td>{receta.instrucciones}</td>
+                            <td>
+                                <Link to={`/edit/${receta.nombre}`} className="button-editar-comida"> 
+                                    Editar
+                                </Link>
+                            </td>
                         </tr>
                     ))}
                 </tbody>

@@ -24,8 +24,10 @@ const week2 = [
 export const WeekPage = () => {
   return (
     <div>
-      <p>WEEKPAGE</p>
-      <h1> Semana 1 </h1>
+        <h1> Menu Semanales </h1>
+        <button className= "button-agregar-comida"><Link className="link-agregar-comida" to="/">Volver</Link></button>
+        
+      <h3> Semana 1 </h3>
       <table className="menus-table"> 
           <thead>
               <tr>
@@ -47,7 +49,7 @@ export const WeekPage = () => {
           </tbody>
       </table>
 
-      <h1> Semana 2</h1>
+      <h3> Semana 2</h3>
 
       <table className="menus-table"> {/* Tabla para mostrar las recetas */}
           <thead>

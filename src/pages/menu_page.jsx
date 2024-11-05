@@ -24,9 +24,9 @@ const week2 = [
 export const MenuPage = () => {
   return (
     <div>
-      <p>MENU PAGE</p>
+      <h1>Editar Menu Semanal</h1>
 
-      <h1> Semana 1 </h1>
+      <h3> Semana 1 </h3>
       <table className="menus-table"> 
           <thead>
               <tr>
@@ -40,15 +40,15 @@ export const MenuPage = () => {
               {week1.map((week) => (
                   <tr key={week.dia}>
                       <td>{week.dia}</td>
-                      <td>{week.Desayuno} <button>Editar</button></td>
-                      <td>{week.Almuerzo} <button>Editar</button></td> 
-                      <td>{week.Cena} <button>Editar</button></td>
+                      <td>{week.Desayuno} <button className="button-Editar-comida">Editar</button></td>
+                      <td>{week.Almuerzo} <button className="button-Editar-comida">Editar</button></td> 
+                      <td>{week.Cena} <button className="button-Editar-comida" >Editar </button></td>
                   </tr>
               ))}
           </tbody>
       </table>
 
-      <h1> Semana 2</h1>
+      <h3> Semana 2</h3>
 
       <table className="menus-table"> {/* Tabla para mostrar las recetas */}
           <thead>
@@ -57,15 +57,16 @@ export const MenuPage = () => {
                   <th>Desayuno</th>
                   <th>Almuerzo</th>
                   <th>Cena</th>
+                  
               </tr>
           </thead>
           <tbody>
               {week2.map((week) => (
                   <tr key={week.dia}>
                       <td>{week.dia}</td>
-                      <td>{week.Desayuno} <button>Editar</button></td>
-                      <td>{week.Almuerzo} <button>Editar</button></td> 
-                      <td>{week.Cena} <button>Editar</button></td>
+                      <td>{week.Desayuno} <button className="button-Editar-comida">Editar</button></td>
+                      <td>{week.Almuerzo} <button className="button-Editar-comida">Editar</button></td> 
+                      <td>{week.Cena} <button className="button-Editar-comida">Editar</button></td>
                   </tr>
               ))}
           </tbody>
