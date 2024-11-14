@@ -19,7 +19,7 @@ export const NavBar = () => {
 
                 {/* Otros NavLinks */}
                 <NavLink to="/week" className={({ isActive }) => (isActive ? 'nav-bar__link active' : 'nav-bar__link')}>
-                    Ver semanas
+                    Ver Menu
                 </NavLink>
                 <NavLink to="/supermarket" className={({ isActive }) => (isActive ? 'nav-bar__link active' : 'nav-bar__link')}>
                     Ver lista supermercado

@@ -42,7 +42,7 @@ export const Supermarket = () => {
                           {ingredient}
                       </span>
                       <button className="button-eliminar" onClick={() => handleEliminar(i + index)}>
-                          Eliminar
+                          X
                       </button>
                   </td>
               ))}

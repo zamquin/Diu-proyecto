@@ -22,59 +22,47 @@ const week2 = [
 ];
 
 export const WeekPage = () => {
-  return (
-    <div>
-        <h1> Menu Semanales </h1>
-        <button className= "button-agregar-comida"><Link className="link-agregar-comida" to="/">Volver</Link></button>
-        
-      <h3> Semana 1 </h3>
-      <table className="menus-table"> 
-          <thead>
-              <tr>
-                  <th>dia</th>
-                  <th>Desayuno</th>
-                  <th>Almuerzo</th>
-                  <th>Cena</th>
-              </tr>
-          </thead>
-          <tbody>
-              {week1.map((week) => (
-                  <tr key={week.dia}>
-                      <td>{week.dia}</td>
-                      <td>{week.Desayuno}</td>
-                      <td>{week.Almuerzo}</td> 
-                      <td>{week.Cena}</td>
-                  </tr>
-              ))}
-          </tbody>
-      </table>
+    const renderTable = (weekData) => (
+        <table className="menus-table">
+            <thead>
+                <tr>
+                    <th>Comida</th>
+                    {weekData.map((day) => (
+                        <th key={day.dia}>{day.dia}</th>
+                    ))}
+                </tr>
+            </thead>
+            <tbody>
+                {['Desayuno', 'Almuerzo', 'Cena'].map((mealType) => (
+                    <tr key={mealType}>
+                        <td>{mealType}</td>
+                        {weekData.map((day) => (
+                            <td key={`${day.dia}-${mealType}`}>{day[mealType]}</td>
+                        ))}
+                    </tr>
+                ))}
+            </tbody>
+        </table>
+    );
 
-      <h3> Semana 2</h3>
+    return (
+        <div>
+            <h1>Menú Semanales</h1>
+            <button className="button-agregar-comida">
+                <Link className="link-agregar-comida" to="/">Volver</Link>
+            </button>
 
-      <table className="menus-table"> {/* Tabla para mostrar las recetas */}
-          <thead>
-              <tr>
-                  <th>dia</th>
-                  <th>Desayuno</th>
-                  <th>Almuerzo</th>
-                  <th>Cena</th>
-              </tr>
-          </thead>
-          <tbody>
-              {week2.map((week) => (
-                  <tr key={week.dia}>
-                      <td>{week.dia}</td>
-                      <td>{week.Desayuno}</td>
-                      <td>{week.Almuerzo}</td> 
-                      <td>{week.Cena}</td>
-                  </tr>
-              ))}
-          </tbody>
-      </table>
+            <h3>Semana 1</h3>
+            {renderTable(week1)} {/* Renderiza la tabla para la semana 1 */}
 
-      <button className= "button-agregar-comida"> <Link className="link-agregar-comida" to="/supermarket">Ver Lista de Compras</Link></button>
-    </div>
-  )
-}
+            <h3>Semana 2</h3>
+            {renderTable(week2)} {/* Renderiza la tabla para la semana 2 */}
 
-export default WeekPage
+            <button className="button-agregar-comida">
+                <Link className="link-agregar-comida" to="/supermarket">Ver Lista de Compras</Link>
+            </button>
+        </div>
+    );
+};
+
+export default WeekPage;
