@@ -1,17 +1,130 @@
-.menu-container {
-    background-color: #f2e9e4; /* Color de fondo */
-    padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    text-align: center; /* Centra el texto */
-    max-width: 500px; /* Ancho máximo del contenedor */
-    margin: 20px auto; /* Centra el contenedor horizontalmente */
+// // .menu-container {
+// //     background-color: #f2e9e4; /* Color de fondo */
+// //     padding: 20px;
+// //     border-radius: 10px; /* Bordes redondeados */
+// //     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+// //     text-align: center; /* Centra el texto */
+// //     max-width: 500px; /* Ancho máximo del contenedor */
+// //     margin: 20px auto; /* Centra el contenedor horizontalmente */
 
     
+// // }
+
+// .button-volver {
+//     background-color: #e76f51; /* Color naranja */
+//     color: white;
+//     padding: 10px 20px;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     font-size: 16px;
+//     margin-bottom: 20px;
+//     display: inline-block;
+// }
+
+
+// .link-volver{
+//     text-decoration: none;
+//     color: white;
+// }
+
+// .form-container{
+//     text-align: left;
+// }
+
+
+// .select-container,
+// .input-container {
+//     margin-bottom: 15px;
+// }
+
+// label {
+//     display: block;
+//     margin-bottom: 5px;
+// }
+
+// select,
+// input[type='text'] {
+//     width: calc(100% - 22px); /* Ajusta el ancho para el padding */
+//     padding: 10px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+//     box-sizing: border-box; /* Incluye el padding en el ancho total */
+// }
+
+// .button-agregar {
+//     background-color: #e76f51; /* Color naranja */
+//     color: white;
+//     padding: 10px 20px;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     font-size: 16px;
+//     margin-top: 10px;
+//     text-align: center;
+
+// }
+
+
+
+// /* Estilos opcionales para mejorar la apariencia */
+// h1 {
+//     margin-bottom: 20px;
+// }
+// .menu-container {
+//     background-color: #f2e9e4;
+//     padding: 20px;
+//     border-radius: 10px;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//     /* Ocupa toda la pantalla y se extiende horizontalmente */
+//     min-height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     /* Alinea el contenido a la izquierda */
+//     align-items: flex-start; // <-- Cambio aquí
+//     /* El ancho del contenedor ocupa todo el viewport */
+//     width: 100%; 
+//     margin: 0;
+//     box-sizing: border-box; // Incluye padding y border en el ancho
+// }
+
+// .form-container {
+//     text-align: left;
+//     /* Ocupa todo el ancho disponible */
+//     width: 100%;
+// }
+
+// .input-container ul {
+//   list-style: none;
+//   padding: 0;
+// }
+
+// .input-container button { /* Estilos para los botones de ingredientes */
+//   margin: 5px;
+//   padding: 5px 10px;
+//   background-color: #2a9d8f; /* Otro color de tu paleta */
+//   color: white;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+// }
+.menu-container {
+    background-color: #f2e9e4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+
 .button-volver {
-    background-color: #e76f51; /* Color naranja */
+    background-color: #e76f51;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -22,16 +135,15 @@
     display: inline-block;
 }
 
-
-.link-volver{
+.link-volver {
     text-decoration: none;
     color: white;
 }
 
-.form-container{
+.form-container {
     text-align: left;
+    width: 100%;
 }
-
 
 .select-container,
 .input-container {
@@ -45,15 +157,15 @@ label {
 
 select,
 input[type='text'] {
-    width: calc(100% - 22px); /* Ajusta el ancho para el padding */
+    width: calc(100% - 22px);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    box-sizing: border-box;
 }
 
 .button-agregar {
-    background-color: #e76f51; /* Color naranja */
+    background-color: #e76f51;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -67,7 +179,21 @@ input[type='text'] {
 
 
 
-/* Estilos opcionales para mejorar la apariencia */
 h1 {
     margin-bottom: 20px;
+}
+
+.input-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.input-container button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
