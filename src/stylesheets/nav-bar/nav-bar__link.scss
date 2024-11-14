@@ -1,44 +1,7 @@
-
-// .nav-bar__links {  /* Contenedor para agrupar los enlaces */
-//   display: flex;
-//   align-items: center;
-// }
-
-// .nav-bar__link {
-//   text-decoration: none;
-//   color: #333; /* Color de texto oscuro */
-//   margin-left: 25px; /* Espacio entre enlaces */
-//   padding-bottom: 5px; // Espacio para la línea inferior
-//   font-weight: 500;
-//   border-bottom: 2px solid transparent; // Línea inferior transparente por defecto
-
-
-//   &:hover,
-//   &.active { // Subrayado al pasar el ratón o en estado activo
-//     border-bottom: 2px solid #e76f51; // Línea inferior naranja
-//     color: #e76f51; // Cambia de color al pasar el ratón o estar activo
-//   }
-
-
-// }
-
-
-
-// .nav-bar__link--button {
-//   background-color: #ff6700; /* Color naranja del botón */
-//   color: white;
-//   padding: 8px 16px;
-//   border-radius: 20px;
-//   margin-left: 20px;
-//   border: none; /* Quita el borde por defecto */
-
-//   &:hover { /* Efecto hover para el botón */
-//       background-color: darken(#ff6700, 10%); // Oscurece el color al pasar el ratón
-//   }
-// }
 .nav-bar__links {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 
@@ -48,10 +11,9 @@
   margin-left: 25px;
   padding-bottom: 5px;
   font-weight: 500;
-  border-bottom: 2px solid transparent; // Línea inferior transparente por defecto
-
+  border-bottom: 2px solid transparent; 
   &:hover,
-  &.nav-bar__link--active { // Enlace activo o al pasar el mouse
+  &.nav-bar__link--active { 
       border-bottom: 2px solid #e76f51;
       color: #e76f51;
   }

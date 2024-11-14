@@ -53,61 +53,43 @@ export const MenuPage = () => {
 
   const renderTable = (weekData, weekNum) => (
     <div className="home__cta-container">
-    <table className="menus-table">
-      <thead>
-        <tr>
-          <th>Día</th>
-          <th>Desayuno</th>
-          <th>Almuerzo</th>
-          <th>Cena</th>
-        </tr>
-      </thead>
-      <tbody>
-        {weekData.map((day, index) => (
-          <tr key={day.dia}>
-            <td>{day.dia}</td>
-            <td>
-              {/* {day.Desayuno} */}
-              <select 
-                className="edit-select"
-                value={day.Desayuno}
-                onChange={(e) => handleChange(weekNum, index, 'Desayuno', e.target.value)}
-              >
-                {comidas.map(comida => (
-                  <option key={comida} value={comida}>{comida}</option>
+        <table className="menus-table">
+            <thead>
+                <tr>
+                    <th>Comida</th>
+                    {weekData.map((day) => (
+                        <th key={day.dia}>{day.dia}</th>
+                    ))}
+                </tr>
+            </thead>
+            <tbody>
+                {['Desayuno', 'Almuerzo', 'Cena'].map((mealType) => (
+                    <tr key={mealType}>
+                        <td>{mealType}</td>
+                        {weekData.map((day, dayIndex) => (
+                            <td key={day.dia}>
+                                <select
+                                    className="edit-select"
+                                    value={day[mealType]}
+                                    onChange={(e) =>
+                                        handleChange(weekNum, dayIndex, mealType, e.target.value)
+                                    }
+                                >
+                                    {comidas.map((comida) => (
+                                        <option key={comida} value={comida}>
+                                            {comida}
+                                        </option>
+                                    ))}
+                                </select>
+                            </td>
+                        ))}
+                    </tr>
                 ))}
-              </select>
-            </td>
-            <td>
-              {/* {day.Almuerzo} */}
-              <select 
-                className="edit-select"
-                value={day.Almuerzo}
-                onChange={(e) => handleChange(weekNum, index, 'Almuerzo', e.target.value)}
-              >
-                {comidas.map(comida => (
-                  <option key={comida} value={comida}>{comida}</option>
-                ))}
-              </select>
-            </td>
-            <td>
-              {/* {day.Cena} */}
-              <select 
-                className="edit-select"
-                value={day.Cena}
-                onChange={(e) => handleChange(weekNum, index, 'Cena', e.target.value)}
-              >
-                {comidas.map(comida => (
-                  <option key={comida} value={comida}>{comida}</option>
-                ))}
-              </select>
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+            </tbody>
+        </table>
     </div>
-  );
+);
+
 
   return (
     <div>

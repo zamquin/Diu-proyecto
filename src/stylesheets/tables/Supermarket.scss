@@ -1,0 +1,31 @@
+.button-eliminar {
+    background-color: #d86772; /* Color rojo para eliminar */
+    color: white;
+    border: none;
+    padding: 3px 6px;  /* Tamaño pequeño */
+    border-radius: 4px;
+    margin-left: flex-end;
+    cursor: pointer;
+    margin-left: 5px; /* Espacio entre el texto y el botón */
+    font-size: 14px;
+    height: fit-content; /* Ajusta la altura al contenido */
+
+
+}
+
+.menus-table input[type="checkbox"]{
+
+    margin-right: 5px;
+
+
+}
+
+
+.button-eliminar:hover {
+    background-color: #b1666e; /* Color más oscuro al pasar el ratón */
+}
+
+
+.menus-table{
+    margin-bottom: 1rem;
+}

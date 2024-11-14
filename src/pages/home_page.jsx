@@ -90,9 +90,9 @@ const HomePage = () => {
           <p className="home__cta-description">
             Únete a nuestra comunidad y comienza a planificar tus comidas de manera inteligente
           </p>
-          <Link to="/menu" className="home__cta-button">
+          {/* <Link to="/menu" className="home__cta-button">
             Crear mi primer menú
-          </Link>
+          </Link> */}
         </div>
       </motion.section>
     </div>
