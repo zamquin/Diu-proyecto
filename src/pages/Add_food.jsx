@@ -202,10 +202,11 @@ export const Menu = () => {
                     
 
                 </div>
-
+                <a href='/recipe'>
                 <button className="button-agregar" onClick={agregarComida}>
                     Agregar Comida
                 </button>
+                </a>
             </div>
         </div>
     );

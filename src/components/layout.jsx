@@ -6,6 +6,7 @@ import Supermarket from '../pages/supermarket_page'
 import MenuPage from '../pages/menu_page'
 import WeekPage from '../pages/week_page'
 import Recipes from '../pages/recipes'
+import Recipe from '../pages/Recipe'
 
 
 
@@ -25,6 +26,7 @@ const Layout = () => {
             <Route path='/week' element={<WeekPage />} />
             <Route path='/recipes' element={<Recipes />} />
             <Route path='/add' element={<Add />} />
+            <Route path='/recipe' element={<Recipe />} />
 
 
           </Routes>
